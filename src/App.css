@@ -1,0 +1,102 @@
+body {
+  font-family: 'Josefin Sans';
+  background-image: url('./assets/images/background.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  backdrop-filter: blur(10px);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.detail-image {
+  width: 729px;
+  height: 742px;
+  border-radius: 50%;
+}
+
+.hero-banner-img {
+  width: 700px;
+  height: 900px;
+  margin-top: -330px;
+  z-index: 5;
+  object-fit: cover;
+  border-bottom-left-radius: 50px;
+  border-style: hidden;
+}
+
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: white;
+  border-top: 4px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.bodyPart-card {
+  transition: 0.3s all ease-in-out;
+}
+
+.bodyPart-card:hover {
+  transform: scale(1.03, 1);
+}
+
+.search-btn:hover {
+  background-color: black !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  background-color: rgba(235, 235, 235, 0.2);
+  border-radius: 10px;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-banner-img {
+    display: none;
+  }
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .exercise-card {
+    width: 280px;
+  }
+}
